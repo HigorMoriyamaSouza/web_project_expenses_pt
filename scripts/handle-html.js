@@ -167,8 +167,7 @@ function setStats() {
 
   const largestCategoryKey = calculateLargestCategory();
   largestCategoryTitleElement.textContent = categoryNames[largestCategoryKey];
-  largestCategoryValueElement.textContent =
-    calculateCategoryExpenses(largestCategoryKey).toFixed(2);
+  largestCategoryValueElement.textContent = calculateCategoryExpenses(largestCategoryKey).toFixed(2);
 }
 
 openModalBtn.addEventListener("click", openModal);
