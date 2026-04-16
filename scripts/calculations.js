@@ -53,12 +53,9 @@ function calculateCategoryExpenses(category) {
 function calculateLargestCategory() {
     const categoriesList = ["groceries", "restaurants", "transport", "home", "subscriptions"];
     let largestCategoryArray = ["", 0];
-    let categoriesTotal = [];
 
     for (let category of categoriesList)  {
         let categoryExpenseCalculatedValue = calculateCategoryExpenses(category);
-
-        categoriesTotal.push([category, categoryExpenseCalculatedValue]);
 
         if (categoryExpenseCalculatedValue > largestCategoryArray[1]) {
             largestCategoryArray = [category, categoryExpenseCalculatedValue];
@@ -71,6 +68,8 @@ function calculateLargestCategory() {
 function addExpenseEntry(newExpense) {
     expenseEntries.push(newExpense);
     totalExpensesValue += newExpense[1];
+    expensesNumber++;
+    console.log(`Expenses count: ${expensesNumber} Expense added: ${newExpense}`);
 }
 
 calculateExpensesTotal();
