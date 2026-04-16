@@ -1,28 +1,18 @@
 const budgetInput = document.querySelector(".budget__input");
 const budgetSetButton = document.querySelector(".budget__set-btn");
 
-const totalExpensesValueElement = document.querySelector(
-  "#total-expenses-value"
-);
-const averageExpenseValueElement = document.querySelector(
-  "#average-expense-value"
-);
+const totalExpensesValueElement = document.querySelector("#total-expenses-value");
+const averageExpenseValueElement = document.querySelector("#average-expense-value");
 const balanceValueElement = document.querySelector("#balance-value");
 
-const largestCategoryTitleElement = document.querySelector(
-  ".stats__item-title_largest"
-);
-const largestCategoryValueElement = document.querySelector(
-  ".stats__item-value_largest"
-);
+const largestCategoryTitleElement = document.querySelector(".stats__item-title_largest");
+const largestCategoryValueElement = document.querySelector(".stats__item-value_largest");
 
 const groceriesValueElement = document.querySelector("#groceries-value");
 const restaurantsValueElement = document.querySelector("#restaurants-value");
 const transportValueElement = document.querySelector("#transport-value");
 const homeValueElement = document.querySelector("#home-value");
-const subscriptionsValueElement = document.querySelector(
-  "#subscriptions-value"
-);
+const subscriptionsValueElement = document.querySelector("#subscriptions-value");
 
 const modal = document.querySelector("#add-expense-modal");
 const openModalBtn = document.querySelector(".controls__add-btn");
@@ -39,11 +29,11 @@ const expensesList = document.querySelector(".expenses__list");
 const expenseTemplate = document.querySelector("#expense-template");
 
 const categoryNames = {
-  groceries: "Comida",
-  restaurants: "Comer fuera",
-  subscriptions: "Suscripciones",
-  transport: "Transporte",
-  home: "Hogar",
+  groceries: "Market",
+  restaurants: "Restaurant",
+  subscriptions: "Subscriptions",
+  transport: "Transport",
+  home: "House",
 };
 
 function openModal() {

@@ -19,8 +19,6 @@ function calculateExpensesTotal() {
       }
 }
 
-calculateExpensesTotal();
-
 function calculateAverageExpense() {
     let averageResult = (expensesNumber === 0) ? 0 : totalExpensesValue / expensesNumber;
     return averageResult;
@@ -75,3 +73,4 @@ function addExpenseEntry(newExpense) {
     totalExpensesValue += newExpense[1];
 }
 
+calculateExpensesTotal();
