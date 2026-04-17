@@ -2,15 +2,7 @@ let budgetValue = 0;
 let totalExpensesValue = 0;
 let balanceColor = "";
 
-const expenseEntries = [
-  ["groceries", 33],
-  ["restaurants", 50],
-  ["transport", 12],
-  ["home", 70],
-  ["subscriptions", 14],
-  ["groceries", 28],
-  ["subscriptions", 12],
-];
+const expenseEntries = [];
 let expensesNumber = expenseEntries.length;
 
 function calculateExpensesTotal() {
@@ -69,7 +61,6 @@ function addExpenseEntry(newExpense) {
     expenseEntries.push(newExpense);
     totalExpensesValue += newExpense[1];
     expensesNumber++;
-    console.log(`Expenses count: ${expensesNumber} Expense added: ${newExpense}`);
 }
 
 calculateExpensesTotal();
