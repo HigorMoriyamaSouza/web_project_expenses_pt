@@ -106,7 +106,7 @@ No build step required.
 ## 👨‍💻 Author
 
 **Higor Moriyama Souza**
-Software Engineer | Backend-Focused | Full Stack Capable
+Software Engineer | Full Stack Developer
 
 ---
 
