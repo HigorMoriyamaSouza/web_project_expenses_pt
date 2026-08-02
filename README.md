@@ -1,115 +1,88 @@
-# 💸 Expense Tracker (Vanilla JavaScript)
+# Expense Tracker
 
-A lightweight expense tracking application built with **Vanilla JavaScript**, focused on **clean state management, data persistence, and dynamic UI updates**.
+Lightweight expense-management application built with Vanilla JavaScript.
 
-This project demonstrates core frontend engineering skills without relying on frameworks — emphasizing a strong understanding of JavaScript fundamentals.
+## Overview
 
----
+Expense Tracker is a browser-based application for managing a personal budget and monitoring expenses by category.
 
-## 🚀 Features
+The project focuses on clean state management, browser data persistence, and dynamic interface updates without relying on a frontend framework.
 
-* ✅ Set and manage a personal budget
-* ✅ Add and track expenses by category
-* ✅ Real-time statistics:
+## Live Application
 
-  * Total expenses
-  * Average expense
-  * Remaining balance
-  * Highest expense category
-* ✅ Data persistence using **LocalStorage**
-* ✅ Dynamic UI updates without page reload
-* ✅ Reset to default state
+[Open the live application](https://higormoriyamasouza.github.io/web_project_expenses_pt/)
 
----
+## Main Features
 
-## 🧠 Technical Highlights
+- Set and manage a personal budget
+- Add expenses
+- Organize expenses by category
+- Display updated financial statistics
+- Preserve application data with LocalStorage
+- Update the interface without page reloads
+- Reset the application to its default state
 
-This project was designed to reinforce **core JavaScript concepts used in real-world applications**:
+## Technologies
 
-* **State Management**
+- JavaScript
+- HTML5
+- CSS3
+- LocalStorage
+- DOM API
 
-  * Centralized handling of `expenseEntries` and budget
-  * Controlled updates to avoid unintended mutations
+## Technical Highlights
 
-* **Data Persistence**
+### State Management
 
-  * LocalStorage integration
-  * Serialization with `JSON.stringify` / `JSON.parse`
+The application maintains budget and expense information in a structured state reflected in the interface.
 
-* **Deep Copy Handling**
+### Data Persistence
 
-  * Use of `structuredClone()` to prevent shared references
+LocalStorage preserves user data between browser sessions without requiring a backend service.
 
-* **Separation of Concerns**
+### Dynamic Interface Updates
 
-  * `calculations.js` → business logic
-  * `handle-html.js` → DOM manipulation
-  * `index.js` → orchestration & app flow
+Budget values, expense records, and statistics update after user actions without reloading the page.
 
-* **Functional Thinking**
+### Framework-Free Development
 
-  * Iteration, aggregation, and data transformation
+The project was built with Vanilla JavaScript to demonstrate direct knowledge of browser APIs, DOM manipulation, and event-driven programming.
 
----
+## Skills Demonstrated
 
-## 🛠️ Tech Stack
+- JavaScript fundamentals
+- State management
+- Browser storage
+- DOM manipulation
+- Event handling
+- Dynamic rendering
+- Form interaction
+- Responsive frontend development
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
+## Repository
 
-No frameworks or libraries — pure JavaScript.
+[View the source code](https://github.com/HigorMoriyamaSouza/web_project_expenses_pt)
 
----
+## Running the Project Locally
 
-## 📂 Project Structure
+Clone the repository:
 
-```
-/scripts
-  ├── calculations.js   # Business logic (totals, averages, categories)
-  ├── handle-html.js   # DOM updates and rendering
-  └── index.js         # App initialization & state coordination
-
-/pages
-  └── index.css        # Styling
+```bash
+git clone https://github.com/HigorMoriyamaSouza/web_project_expenses_pt.git
+cd web_project_expenses_pt
 ```
 
----
+Use the local development method already configured in the repository.
 
-## ▶️ How to Run
+Confirm the correct entry file or script before publishing this section unchanged.
 
-1. Clone the repository
-2. Open `index.html` in your browser
+## Project Purpose
 
-No build step required.
+This project demonstrates how application state, persistent browser storage, and dynamic interface behavior can be implemented with core JavaScript and without framework abstractions.
 
----
-
-## 🎯 What This Project Demonstrates
-
-* Ability to build **interactive web applications from scratch**
-* Strong understanding of **JavaScript fundamentals**
-* Experience with **state, data flow, and persistence**
-* Writing **modular and maintainable code**
-
----
-
-## 📌 Future Improvements
-
-* Input validation and error handling
-* Category filtering and search
-* Charts/visualization (e.g., expenses breakdown)
-* Migration to a framework like React
-
----
-
-## 👨‍💻 Author
+## Author
 
 **Higor Moriyama Souza**
-Software Engineer | Full Stack Developer
 
----
-
-## 💡 Final Note
-
-This project focuses on mastering the fundamentals that power modern frameworks — demonstrating the ability to build scalable logic **without abstraction layers**.
+- [LinkedIn](https://www.linkedin.com/in/higormoriyamasouza)
+- [GitHub](https://github.com/HigorMoriyamaSouza)
